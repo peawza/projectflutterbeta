@@ -42,10 +42,10 @@ class _SettingsFormState extends State<SettingsForm> {
                     initialValue: userData.name,
                     decoration: textInputDecoration,
                     validator: (val) =>
-                        val.isEmpty ? 'Please enter a name' : null,
+                    val.isEmpty ? 'Please enter a name' : null,
                     onChanged: (val) => setState(() => _currentName = val),
-                  ),1ggy
-                  SizedBox(height: 10.0),z
+                  ),
+                  SizedBox(height: 10.0),
                   DropdownButtonFormField(
                     value: _currentSugars ?? userData.sugars,
                     decoration: textInputDecoration,

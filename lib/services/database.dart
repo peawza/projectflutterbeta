@@ -9,6 +9,18 @@ class DatabaseService {
   // collection reference
   final CollectionReference brewCollection =
       Firestore.instance.collection('brews');
+  final CollectionReference UserCollection =
+  Firestore.instance.collection('user');
+
+  Future<void> updateUserprofileData(String email,String Nickname , String Phone) async {
+    return await UserCollection.document(uid).setData({
+      'email': email,
+      'Nickname': Nickname,
+      'Phone': Phone,
+    });
+  }
+
+
 
   Future<void> updateUserData(String sugars, String name, int strength) async {
     return await brewCollection.document(uid).setData({
@@ -17,6 +29,8 @@ class DatabaseService {
       'strength': strength,
     });
   }
+
+
 
   // brew list from snapshot
   List<Brew> _brewListFromSnapshot(QuerySnapshot snapshot) {

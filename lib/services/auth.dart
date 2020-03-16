@@ -42,12 +42,24 @@ class AuthService {
     }
   }
 
+  /*
+  *
+  String email = '';
+  String password = '';
+  String Nickname = '';
+  String Phone ='';
+  *
+  *
+  *
+  * */
+
   // register with email and password
-  Future registerWithEmailAndPassword(String email, String password) async {
+  Future registerWithEmailAndPassword(String email, String password ,String Nickname , String Phone ) async {
     try {
       AuthResult result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
       FirebaseUser user = result.user;
       // create a new document for the user with the uid
+      await DatabaseService(uid: user.uid).updateUserprofileData(email,Nickname,Phone);
       await DatabaseService(uid: user.uid).updateUserData('0','new crew member', 100);
       return _userFromFirebaseUser(user);
     } catch (error) {
