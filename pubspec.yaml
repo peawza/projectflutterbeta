@@ -43,7 +43,32 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/immages/
+    - assets/immages/
+    - assets/immages/aroundthailand.jpeg
+    - assets/immages/rsm2.jpg
+    - assets/immages/coin.png
+    - assets/immages/tableware.png
+    - assets/immages/telephone.png
+    - assets/immages/temple.png
+    - assets/immages/food/northfood1.PNG
+    - assets/immages/food/northfood2.PNG
+    - assets/immages/food/northfood3.PNG
+    - assets/immages/food/northfood4.PNG
+    - assets/immages/food/northfood5.PNG
+    - assets/immages/food/southfood1.PNG
+    - assets/immages/food/southfood2.PNG
+    - assets/immages/food/south3.PNG
+    - assets/immages/food/southfood4.PNG
+    - assets/immages/food/southfood5.PNG
+    - images/burger.jpg
+    - images/cheesechilly.jpg
+    - images/noodles.jpg
+    - images/pizza.jpg
+    - images/hawkers.jpg
+    - images/bluehill.jpg
+    - images/pizzahut.jpg
+    - images/flipping.jpg
+    - assets/data.json
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -54,10 +79,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Schyler
+      fonts:
+        - asset: fonts/Samantha.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
