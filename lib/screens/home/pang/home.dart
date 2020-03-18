@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:projectflutterbeta/screens/home/brew_title.dart';
+import 'package:projectflutterbeta/screens/home/pang/callcenter.dart';
 import 'package:projectflutterbeta/screens/home/pang/convertermoney.dart';
 import 'package:projectflutterbeta/screens/home/pang/food.dart';
 import 'package:provider/provider.dart';
@@ -109,7 +110,7 @@ class _Home_PangState extends State<Home_Pang> {
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
                             onPressed: (){
-                              //Navigator.push(context, MaterialPageRoute(builder: (context)=>page2()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>Callcente_Page()));
                               //debugPrint('Button clicked');
                             },
                             child: null
@@ -152,6 +153,44 @@ class _Home_PangState extends State<Home_Pang> {
             ],
           ),
         ),
+
+        Center(
+          child: Row(
+            children: <Widget>[
+              SizedBox(
+                width: 25,
+              ),
+              Card(
+                child: Material(
+                  child: ClipOval(
+                    child: Card(
+                      child: Container(
+                        width: 340.0,
+                        height: 150.0,
+                        //alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/immages/telephone.png'),
+                          ),
+                        ),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>Callcente_Page()));
+                              //debugPrint('Button clicked');
+                            },
+                            child: null
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+            ],
+          ),
+        ),
+
       ],
     ) ;
   }
