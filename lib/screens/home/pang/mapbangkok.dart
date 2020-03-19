@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:condition/condition.dart';
 
 class mapbankokPage extends StatefulWidget {
   @override
@@ -81,96 +82,149 @@ class mapbankokPageState extends State<mapbankokPage> {
           children: <Widget>[
             SizedBox(width: 10.0),
             Padding(
-              padding: const EdgeInsets.all(8.0), //ตำแหน่ง
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYaaD.jpg",
-                  13.7516348,
-                  100.4915796,
-                  "Wat Phra Kaew"),
-            ),
+                padding: const EdgeInsets.all(8.0), //ตำแหน่ง
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYaaD.jpg",
+                    13.7516348,
+                    100.4915796,
+                    "Wat Phra Kaew",
+                    'Bangkok',
+                    '4.8',
+                    '5',
+                    '18,640',
+                    '08:30-15:30',
+                    '   -')),
             SizedBox(width: 10.0),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgY6Wn.jpg",
-                  13.7233212,
-                  100.5283196,
-                  "King Power\nMahanakhon"),
-            ),
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgY6Wn.jpg",
+                    13.7233212,
+                    100.5283196,
+                    "King Power\nMahanakhon",
+                    'Bangkok',
+                    '4.6',
+                    '4.5',
+                    '7,372',
+                    '10:00 – 24:00',
+                    '   -')),
             SizedBox(width: 10.0),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgY2xQ.jpg",
-                  13.7412118,
-                  100.5081789,
-                  "Chinatown"),
-            ),
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgY2xQ.jpg",
+                    13.7412118,
+                    100.5081789,
+                    "Chinatown",
+                    'Bangkok',
+                    '4.8',
+                    '5',
+                    '10,357',
+                    '18:00 - 24:00 ',
+                    '   -')),
             SizedBox(width: 10.0),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYV31.jpg",
-                  13.7762674,
-                  100.4544092,
-                  "Taling Chan\nFloating Market"),
-            ), //13.7665171,100.5665007
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYV31.jpg",
+                    13.7762674,
+                    100.4544092,
+                    "Taling Chan\nFloating Market",
+                    'Bangkok',
+                    '3.5',
+                    '3.5',
+                    '1,357',
+                    '08:00 - 18:00',
+                    'Mon - Fri')), //13.7665171,100.5665007
             SizedBox(width: 10.0),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYXOy.jpg",
-                  13.7665171,
-                  100.5665007,
-                  "Train Night\nMarket Ratchada"),
-            ), //13.7665171,100.5665007
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYXOy.jpg",
+                    13.7665171,
+                    100.5665007,
+                    "Train Night\nMarket Ratchada",
+                    'Bangkok',
+                    '4.2',
+                    '4',
+                    '29,525',
+                    '17:00-01:00',
+                    '   -')), //13.7665171,100.5665007
             SizedBox(width: 10.0),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYCnS.jpg",
-                  13.7587268,
-                  100.4974355,
-                  "Khao San Road"),
-            ), //Khao San Road  13.7587268,100.4974355
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYCnS.jpg",
+                    13.7587268,
+                    100.4974355,
+                    "Khao San Road",
+                    'Bangkok',
+                    '4',
+                    '4',
+                    '13,919',
+                    '15:00 - 02:00',
+                    '   -')), //Khao San Road  13.7587268,100.4974355
             SizedBox(width: 10.0),
             //13.7558694,100.503332 Nitasrattanakosin 13.7526286,100.4941149
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYnKg.jpg",
-                  13.7558694,
-                  100.503332,
-                  "Nitasrattanakosin"),
-            ),
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYnKg.jpg",
+                    13.7558694,
+                    100.503332,
+                    "Nitasrattanakosin",
+                    'Bangkok',
+                    '4.6',
+                    '4.5',
+                    '1,821',
+                    '9:00–17:00',
+                    'Sun')),
             SizedBox(width: 10.0),
             //13.746799,100.5328184 Asiatique the Riverfront
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYszV.jpg",
-                  13.704758, 100.501850,
-                  "Asiatique the Riverfront"),
-            ),
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYszV.jpg",
+                    13.704758,
+                    100.501850,
+                    "Asiatique the Riverfront",
+                    'Bangkok',
+                    '4.7',
+                    '5',
+                    '42,943',
+                    '16:00-00:00',
+                    '   -')),
             SizedBox(width: 10.0),
             //13.7526286,100.4941149 Bangkok City Pillar Shrine
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgYaaD.jpg",
-                  13.7526286,
-                  100.4941149,
-                  "Bangkok City\nPillar Shrine"),
-            ),
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QgYaaD.jpg",
+                    13.7526286,
+                    100.4941149,
+                    "Bangkok City\nPillar Shrine",
+                    'Bangkok',
+                    '4.2',
+                    '4.5',
+                    '3,784',
+                    '06:30-18:30',
+                    '   -')),
             SizedBox(width: 10.0),
-            //13.746799,100.5328184 Sea Life Ocean World
+            //13.746799,100.5328184 Sea Life Ocean World 4.5
+            //12,058
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://sv1.picz.in.th/images/2020/03/19/QgY8e2.jpg",
                   13.746799,
                   100.5328184,
-                  "Sea Life Ocean World"),
+                  "Sea Life Ocean World",
+                  'Bangkok',
+                  '4.5',
+                  '4.5',
+                  '12,058',
+                  '10:00-20:00',
+                  '   -'),
             ),
           ],
         ),
@@ -178,7 +232,17 @@ class mapbankokPageState extends State<mapbankokPage> {
     );
   }
 
-  Widget _boxes(String _image, double lat, double long, String restaurantName) {
+  Widget _boxes(
+      String _image,
+      double lat,
+      double long,
+      String restaurantName,
+      String province,
+      String value,
+      String valueStar,
+      String valuepeople,
+      String time,
+      String Closedday) {
     return GestureDetector(
       onTap: () {
         _gotoLocation(lat, long);
@@ -204,10 +268,11 @@ class mapbankokPageState extends State<mapbankokPage> {
                       ),
                     ),
                   ),
-                  Container(                    
+                  Container(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: myDetailsContainer1(restaurantName),
+                      child: myDetailsContainer1(restaurantName, province,
+                          value, valueStar, valuepeople, time, Closedday),
                     ),
                   ),
                 ],
@@ -217,7 +282,14 @@ class mapbankokPageState extends State<mapbankokPage> {
     );
   }
 
-  Widget myDetailsContainer1(String restaurantName) {
+  Widget myDetailsContainer1(
+      String restaurantName,
+      String province,
+      String value,
+      String valueStar,
+      String valuepeople,
+      String time,
+      String Closedday) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -233,67 +305,247 @@ class mapbankokPageState extends State<mapbankokPage> {
           )),
         ),
         SizedBox(height: 5.0),
-        Container(
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Container(
-                child: Text(
-              "4.1",
-              style: TextStyle(
-                color: Colors.black54,
-                fontSize: 18.0,
-              ),
-            )),
-            Container(
-              child: Icon(
-                FontAwesomeIcons.solidStar,
-                color: Colors.amber,
-                size: 15.0,
-              ),
-            ),
-            Container(
-              child: Icon(
-                FontAwesomeIcons.solidStar,
-                color: Colors.amber,
-                size: 15.0,
-              ),
-            ),
-            Container(
-              child: Icon(
-                FontAwesomeIcons.solidStar,
-                color: Colors.amber,
-                size: 15.0,
-              ),
-            ),
-            Container(
-              child: Icon(
-                FontAwesomeIcons.solidStar,
-                color: Colors.amber,
-                size: 15.0,
-              ),
-            ),
-            Container(
-              child: Icon(
-                FontAwesomeIcons.solidStarHalf,
-                color: Colors.amber,
-                size: 15.0,
-              ),
-            ),
-            Container(
-                child: Text(
-              "(946)",
-              style: TextStyle(
-                color: Colors.black54,
-                fontSize: 18.0,
-              ),
-            )),
+        Conditioned(
+          cases: [
+            Case(valueStar == '3.5',
+                builder: () => Container(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Container(
+                            child: Text(
+                          value,
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStarHalf,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.grey[300],
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                            child: Text(
+                          "(" + valuepeople + ")",
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                      ],
+                    ))),
+            Case(valueStar == '4',
+                builder: () => Container(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Container(
+                            child: Text(
+                          value,
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.grey[300],
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                            child: Text(
+                          "(" + valuepeople + ")",
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                      ],
+                    ))),
+            Case(valueStar == '4.5',
+                builder: () => Container(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Container(
+                            child: Text(
+                          value,
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStarHalf,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                            child: Text(
+                          "(" + valuepeople + ")",
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                      ],
+                    ))),
+            Case(valueStar == '5',
+                builder: () => Container(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Container(
+                            child: Text(
+                          value,
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            FontAwesomeIcons.solidStar,
+                            color: Colors.amber,
+                            size: 15.0,
+                          ),
+                        ),
+                        Container(
+                            child: Text(
+                          "(" + valuepeople + ")",
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 18.0,
+                          ),
+                        )),
+                      ],
+                    )))
           ],
-        )),
+          defaultBuilder: () => Icon(Icons.wb_sunny),
+        ),
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          "American \u00B7 \u0024\u0024 \u00B7 1.6 mi",
+          province,
           style: TextStyle(
             color: Colors.black54,
             fontSize: 18.0,
@@ -302,7 +554,16 @@ class mapbankokPageState extends State<mapbankokPage> {
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          "Closed \u00B7 Opens 17:00 Thu",
+          "Opens " + time,
+          style: TextStyle(
+              color: Colors.black54,
+              fontSize: 18.0,
+              fontWeight: FontWeight.bold),
+        )),
+        SizedBox(height: 2.0),
+        Container(
+            child: Text(
+          "Closed day \u00B7 " + Closedday,
           style: TextStyle(
               color: Colors.black54,
               fontSize: 18.0,
@@ -332,7 +593,8 @@ class mapbankokPageState extends State<mapbankokPage> {
           bookMarkerKhaoSanRoad,
           bookMarkerNitasrattanakosin,
           bookMarkerBangkokCityPillarShrine,
-          bookMarkerAsiatiquetheRiverfront
+          bookMarkerAsiatiquetheRiverfront,
+          bookMarkerSeaLifeOceanWorld
         },
       ),
     );
@@ -432,6 +694,7 @@ Marker bookMarkerAsiatiquetheRiverfront = Marker(
     BitmapDescriptor.hueViolet,
   ),
 );
+//13.746799,100.5328184, "Sea Life Ocean World",
 
 Marker bernardinMarker = Marker(
   markerId: MarkerId('KING POWER \n MAHANAKHON'),
