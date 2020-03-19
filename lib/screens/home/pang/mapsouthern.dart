@@ -84,9 +84,9 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0), //ตำแหน่ง
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKcUf.jpg",
-                    7.758863,
-                    98.3013303,
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5Jx0.jpg",
+                    7.758709,
+                    98.303357,
                     "Promthep Cape", //1
                     'Phuket',
                     '4.6',
@@ -98,10 +98,10 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKZNb.jpg",
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5GzR.jpg",
                     8.1341515,
                     98.2939967,
-                    "Mai Khao beach",
+                    "Mai Khao beach", //2
                     'Phuket',
                     '4.5',
                     '4.5',
@@ -112,10 +112,10 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKxcz.jpg",
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5L6u.jpg",
                     8.2387217,
                     98.4432624,
-                    "Samet Nang She Viewpoint",
+                    "Samet Nang She Viewpoint", //3
                     'Phangnga',
                     '4.5',
                     '4.5',
@@ -126,9 +126,9 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiK5T0.jpg",
-                    8.6487347,
-                    97.6277508,
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5mWZ.jpg",
+                    8.1344685,
+                    98.2988249,
                     "Similan Islands",
                     'Phuket',
                     '4.7',
@@ -140,7 +140,7 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKR0q.jpg",
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5y1I.jpg",
                     8.3060091,
                     98.4546746,
                     "Ao Phang Nga National Park",
@@ -154,7 +154,7 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKEju.jpg",
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5FAP.jpg",
                     8.8386443,
                     98.9617991,
                     "Pa Ton Nam Ban Nam Rad",
@@ -169,9 +169,9 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKQs8.jpg",
-                    7.1985835,
-                    100.5867381,
+                    "https://sv1.picz.in.th/images/2020/03/19/Qi5Iet.jpg",
+                    7.1958965,
+                    100.5897418,
                     "Street Art Songkhla",
                     'Songkhla',
                     '4.5',
@@ -184,9 +184,9 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKUyR.jpg",
-                    19.4979376,
-                    97.9078109,
+                    "https://sv1.picz.in.th/images/2020/03/19/QiEWke.jpg",
+                    5.8851862,
+                    101.0221022,
                     "Flower Garden Betong",
                     'Yala',
                     '4.5',
@@ -199,7 +199,7 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QiKgra.jpg",
+                    "https://sv1.picz.in.th/images/2020/03/19/QiEdOl.jpg",
                     7.046175,
                     100.4739172,
                     "Khlonghae Floating Market",
@@ -215,9 +215,9 @@ class MapsouthernPageState extends State<MapsouthernPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QiKOvZ.jpg",
-                  7.4112606,
-                  99.5136204,
+                  "https://sv1.picz.in.th/images/2020/03/19/QiE0ak.jpg",
+                  7.4107189,
+                  99.5146822,
                   "Kantang Railway Station",
                   'Trang',
                   '4.5',
@@ -585,16 +585,16 @@ class MapsouthernPageState extends State<MapsouthernPage> {
           _controller.complete(controller);
         },
         markers: {
-          bookMarkerDoiInthanonNationalPark,
-          bookMarkerDoiMaeUKho,
-          bookMarkerDoiAngKhang,
-          bookMarkerHuaiNamDangNationalPark,
-          bookMarkerTrainNightMarketRatchada,
-          bookMarkerWatRongKhun,
-          bookMarkerDoiTungRoyalVilla,
-          bookMarkerSiNanNationalPark,
-          bookMarkerPangOung,
-          bookMarkerKhunSathanNationalPark
+          bookMarkerPaTonNamBanNamRad,
+          bookMarkerAoPhangNgaNationalPark,
+          bookMarkerSimilanIslands,
+          bookMarkerStreetArtSongkhla,
+          bookMarkerFlowerGardenBetong,
+          bookMarkerKhlonghaeFloatingMarket,
+          bookMarkerKantangRailwayStation,
+          bookMarkerPromthepCape, //1
+          bookMarkerSametNangSheViewpoint,
+          bookMarkerMaiKhaobeach //2
         },
       ),
     );
@@ -611,57 +611,66 @@ class MapsouthernPageState extends State<MapsouthernPage> {
   }
 }
 
-Marker bookMarkerDoiInthanonNationalPark = Marker(
-  markerId: MarkerId('Doi Inthanon\nNational Park'),
-  position: LatLng(18.5358321, 98.520961), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Doi Inthanon National Park'),
+Marker bookMarkerPaTonNamBanNamRad = Marker(
+  markerId: MarkerId('Pa Ton Nam Ban Nam Rad'),
+  position: LatLng(8.8386443, 98.9617991), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Pa Ton Nam Ban Nam Rad'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
-Marker bookMarkerDoiAngKhang = Marker(
-  markerId: MarkerId('Doi Ang Khang'),
-  position: LatLng(19.869721, 99.0374904), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Doi Ang Khang'),
-  icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
-  ),
-);
-Marker bookMarkerHuaiNamDangNationalPark = Marker(
-  markerId: MarkerId('Huai Nam Dang\nNational Park'),
+Marker bookMarkerMaiKhaobeach = Marker(
+  markerId: MarkerId('Mai Khao beach'),
   position: LatLng(
-    19.303936,
-    98.5966806,
+    8.1344685,
+    98.2988249,
   ), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Huai Nam Dang\nNational Park'),
+  infoWindow: InfoWindow(title: 'Mai Khao beach'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
-Marker bookMarkerTrainNightMarketRatchada = Marker(
-  markerId: MarkerId('Phu Chi Fa'),
-  position: LatLng(19.8506537, 100.4531632), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Phu Chi Fa'),
+Marker bookMarkerStreetArtSongkhla = Marker(
+  markerId: MarkerId('Street Art Songkhla'),
+  position: LatLng(
+    7.1958965,
+    100.5897418,
+  ), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Street Art Songkhla'),
+  icon: BitmapDescriptor.defaultMarkerWithHue(
+    BitmapDescriptor.hueViolet,
+  ),
+);
+Marker bookMarkerFlowerGardenBetong = Marker(
+  markerId: MarkerId('Flower Garden Betong'),
+  position: LatLng(
+    5.8851862,
+    101.0221022,
+  ), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Flower Garden Betong'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //Khao San Road  13.7587268,100.4974355
-Marker bookMarkerWatRongKhun = Marker(
-  markerId: MarkerId('Wat Rong Khun'),
-  position: LatLng(19.8242236, 99.7626755),
-  infoWindow: InfoWindow(title: 'Wat Rong Khun'),
+Marker bookMarkerKhlonghaeFloatingMarket = Marker(
+  markerId: MarkerId('Khlonghae Floating Market'),
+  position: LatLng(7.046175, 100.4739172),
+  infoWindow: InfoWindow(title: 'Khlonghae Floating Market'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //13.7558694,100.503332 Nitasrattanakosin
 
-Marker bookMarkerDoiTungRoyalVilla = Marker(
-  markerId: MarkerId('Doi Tung Royal Villa '),
-  position: LatLng(20.2926014, 99.8078124),
-  infoWindow: InfoWindow(title: 'Doi Tung Royal Villa'),
+Marker bookMarkerKantangRailwayStation = Marker(
+  markerId: MarkerId('Kantang Railway Station '),
+  position: LatLng(
+    7.4107189,
+    99.5146822,
+  ),
+  infoWindow: InfoWindow(title: 'Kantang Railway Station'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -669,39 +678,42 @@ Marker bookMarkerDoiTungRoyalVilla = Marker(
 
 //13.7526286,100.4941149 Bangkok City Pillar Shrine
 
-Marker bookMarkerSiNanNationalPark = Marker(
-  markerId: MarkerId('Si Nan National Park '),
-  position: LatLng(18.3577358, 100.8312127),
-  infoWindow: InfoWindow(title: 'Si Nan National Park'),
+Marker bookMarkerPromthepCape = Marker(
+  markerId: MarkerId('Promthep Cape '),
+  position: LatLng(7.758709, 98.303357),
+  infoWindow: InfoWindow(title: 'Promthep Cape'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
 //13.746799,100.5328184 Sea Life Ocean World
-Marker bookMarkerKhunSathanNationalPark = Marker(
-  markerId: MarkerId('Khun Sathan National Park '),
-  position: LatLng(18.2770774, 100.520795),
-  infoWindow: InfoWindow(title: 'Khun Sathan National Park'),
+Marker bookMarkerSimilanIslands = Marker(
+  markerId: MarkerId('Similan Islands'),
+  position: LatLng(
+    8.6487562,
+    97.6365056,
+  ),
+  infoWindow: InfoWindow(title: 'Mai Khao beach'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
 //13.746799,100.5328184 Asiatique the Riverfront
-Marker bookMarkerPangOung = Marker(
-  markerId: MarkerId('Pang Oung '),
-  position: LatLng(19.4979376, 97.9078109),
-  infoWindow: InfoWindow(title: 'Pang Oung'),
+Marker bookMarkerSametNangSheViewpoint = Marker(
+  markerId: MarkerId('Samet Nang She Viewpoint '),
+  position: LatLng(8.2387217, 98.4432624),
+  infoWindow: InfoWindow(title: 'Samet Nang She Viewpoint'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //13.746799,100.5328184, "Sea Life Ocean World",
 
-Marker bookMarkerDoiMaeUKho = Marker(
-  markerId: MarkerId('Doi Mae U-Kho'),
-  position: LatLng(18.8947033, 98.0889057),
+Marker bookMarkerAoPhangNgaNationalPark = Marker(
+  markerId: MarkerId('Ao Phang Nga National Park'),
+  position: LatLng(8.3060091, 98.4546746),
   infoWindow: InfoWindow(title: 'Doi Mae U-Kho'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,

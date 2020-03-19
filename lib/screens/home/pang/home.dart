@@ -7,6 +7,7 @@ import 'package:projectflutterbeta/screens/home/pang/food.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapbangkok.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapnorth.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapsouthern.dart';
+import 'package:projectflutterbeta/screens/home/pang/test.dart';
 import 'package:provider/provider.dart';
 import 'package:projectflutterbeta/models/brew.dart';
 
@@ -148,7 +149,7 @@ class _Home_PangState extends State<Home_Pang> {
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
                             onPressed: () {
-                              //Navigator.push(context, MaterialPageRoute(builder: (context)=>templex1()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>Test123()));
                               //debugPrint('Button clicked');
                             },
                             child: null),
