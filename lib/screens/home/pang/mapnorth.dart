@@ -4,12 +4,12 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:condition/condition.dart';
 
-class mapbankokPage extends StatefulWidget {
+class mapnorthPage extends StatefulWidget {
   @override
-  mapbankokPageState createState() => mapbankokPageState();
+  mapnorthPageState createState() => mapnorthPageState();
 }
 
-class mapbankokPageState extends State<mapbankokPage> {
+class mapnorthPageState extends State<mapnorthPage> {
   Completer<GoogleMapController> _controller = Completer();
 
   @override
@@ -62,13 +62,13 @@ class mapbankokPageState extends State<mapbankokPage> {
   Future<void> _minus(double zoomVal) async {
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(13.754863, 100.493348), zoom: zoomVal)));
+        CameraPosition(target: LatLng(18.790468, 98.9812626), zoom: zoomVal)));
   }
 
   Future<void> _plus(double zoomVal) async {
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(13.754863, 100.493348), zoom: zoomVal)));
+        CameraPosition(target: LatLng(18.790468, 98.9812626), zoom: zoomVal)));
   }
 
   Widget _buildContainer() {
@@ -84,130 +84,130 @@ class mapbankokPageState extends State<mapbankokPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0), //ตำแหน่ง
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYaaD.jpg",
-                    13.7516348,
-                    100.4915796,
-                    "Wat Phra Kaew",
-                    'Bangkok',
-                    '4.8',
-                    '5',
-                    '18,640',
-                    '08:30-15:30',
-                    '   -')),
-            SizedBox(width: 10.0),
-            Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgY6Wn.jpg",
-                    13.7233212,
-                    100.5283196,
-                    "King Power\nMahanakhon",
-                    'Bangkok',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKcUf.jpg",
+                    18.5358321,
+                    98.520961,
+                    "Doi Inthanon\nNational Park", //1
+                    'Chiang Mai',
                     '4.6',
                     '4.5',
-                    '7,372',
-                    '10:00 – 24:00',
+                    '2,176',
+                    'Open 24 hours',
                     '   -')),
             SizedBox(width: 10.0),
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgY2xQ.jpg",
-                    13.7412118,
-                    100.5081789,
-                    "Chinatown",
-                    'Bangkok',
-                    '4.8',
-                    '5',
-                    '10,357',
-                    '18:00 - 24:00 ',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKZNb.jpg",
+                    19.869721,
+                    99.0374904,
+                    "Doi Ang Khang",
+                    'Chiang Mai',
+                    '4.5',
+                    '4.5',
+                    '3,372',
+                    'Open 24 hours',
                     '   -')),
             SizedBox(width: 10.0),
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYV31.jpg",
-                    13.7762674,
-                    100.4544092,
-                    "Taling Chan\nFloating Market",
-                    'Bangkok',
-                    '3.5',
-                    '3.5',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKxcz.jpg",
+                    19.303936,
+                    98.5966806,
+                    "Huai Nam Dang\nNational Park",
+                    'Chiang Mai',
+                    '4.5',
+                    '4.5',
+                    '34',
+                    'Open 24 hours',
+                    '   -')),
+            SizedBox(width: 10.0),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QiK5T0.jpg",
+                    19.8506537,
+                    100.4531632,
+                    "Phu Chi Fa",
+                    'Chiang Rai',
+                    '4.7',
+                    '4.5',
                     '1,357',
-                    '08:00 - 18:00',
-                    'Mon - Fri')), //13.7665171,100.5665007
-            SizedBox(width: 10.0),
-            Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYXOy.jpg",
-                    13.7665171,
-                    100.5665007,
-                    "Train Night\nMarket Ratchada",
-                    'Bangkok',
-                    '4.2',
-                    '4',
-                    '29,525',
-                    '17:00-01:00',
+                    'Open 24 hours',
                     '   -')), //13.7665171,100.5665007
             SizedBox(width: 10.0),
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYCnS.jpg",
-                    13.7587268,
-                    100.4974355,
-                    "Khao San Road",
-                    'Bangkok',
-                    '4',
-                    '4',
-                    '13,919',
-                    '15:00 - 02:00',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKR0q.jpg",
+                    20.2926014,
+                    99.8078124,
+                    "Doi Tung Royal Villa",
+                    'Chiang Rai',
+                    '4.7',
+                    '4.5',
+                    '29,525',
+                    '07:00-18:00',
+                    '   -')), //13.7665171,100.5665007
+            SizedBox(width: 10.0),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKEju.jpg",
+                    18.3577358,
+                    100.8312127,
+                    "Si Nan\nNational Park",
+                    'Nan',
+                    '4.5',
+                    '4.5',
+                    '419',
+                    '09:00 - 20:00',
                     '   -')), //Khao San Road  13.7587268,100.4974355
             SizedBox(width: 10.0),
             //13.7558694,100.503332 Nitasrattanakosin 13.7526286,100.4941149
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYnKg.jpg",
-                    13.7558694,
-                    100.503332,
-                    "Nitasrattanakosin",
-                    'Bangkok',
-                    '4.6',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKQs8.jpg",
+                    18.2770774,
+                    100.520795,
+                    "Khun Sathan National Park",
+                    'Nan',
                     '4.5',
-                    '1,821',
-                    '9:00–17:00',
-                    'Sun')),
+                    '4.5',
+                    '821',
+                    'Open 24 hours',
+                    '-')),
             SizedBox(width: 10.0),
             //13.746799,100.5328184 Asiatique the Riverfront
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYszV.jpg",
-                    13.704758,
-                    100.501850,
-                    "Asiatique the Riverfront",
-                    'Bangkok',
-                    '4.7',
-                    '5',
-                    '42,943',
-                    '16:00-00:00',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKUyR.jpg",
+                    19.4979376,
+                    97.9078109,
+                    "Pang Oung",
+                    'Mae Hong Son',
+                    '4.5',
+                    '4.5',
+                    '1,848',
+                    'Open 24 hours',
                     '   -')),
             SizedBox(width: 10.0),
             //13.7526286,100.4941149 Bangkok City Pillar Shrine
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "https://sv1.picz.in.th/images/2020/03/19/QgYaaD.jpg",
-                    13.7526286,
-                    100.4941149,
-                    "Bangkok City\nPillar Shrine",
-                    'Bangkok',
-                    '4.2',
+                    "https://sv1.picz.in.th/images/2020/03/19/QiKgra.jpg",
+                    18.8947033,
+                    98.0889057,
+                    "Doi Mae U-Kho",
+                    'Mae Hong Son',
                     '4.5',
-                    '3,784',
-                    '06:30-18:30',
+                    '4.5',
+                    '794',
+                    'Open 24 hours',
                     '   -')),
             SizedBox(width: 10.0),
             //13.746799,100.5328184 Sea Life Ocean World 4.5
@@ -215,15 +215,15 @@ class mapbankokPageState extends State<mapbankokPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
-                  "https://sv1.picz.in.th/images/2020/03/19/QgY8e2.jpg",
-                  13.746799,
-                  100.5328184,
-                  "Sea Life Ocean World",
-                  'Bangkok',
+                  "https://sv1.picz.in.th/images/2020/03/19/QiKOvZ.jpg",
+                  19.8242236,
+                  99.7626755,
+                  "Wat Rong Khun",
+                  'Chiang Rai',
                   '4.5',
                   '4.5',
                   '12,058',
-                  '10:00-20:00',
+                  '08:00-17:00',
                   '   -'),
             ),
           ],
@@ -580,21 +580,21 @@ class mapbankokPageState extends State<mapbankokPage> {
       child: GoogleMap(
         mapType: MapType.normal,
         initialCameraPosition: CameraPosition(
-            target: LatLng(13.7516348, 100.4915796), zoom: 13), //เลือกตำแหน่ง
+            target: LatLng(18.790468, 98.9812626), zoom: 7), //เลือกตำแหน่ง
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
         markers: {
-          gramercyMarker,
-          bernardinMarker,
-          bookMarkerChinatown,
-          bookMarkerTalingChanFloatingMarket,
+          bookMarkerDoiInthanonNationalPark,
+          bookMarkerDoiMaeUKho,
+          bookMarkerDoiAngKhang,
+          bookMarkerHuaiNamDangNationalPark,
           bookMarkerTrainNightMarketRatchada,
-          bookMarkerKhaoSanRoad,
-          bookMarkerNitasrattanakosin,
-          bookMarkerBangkokCityPillarShrine,
-          bookMarkerAsiatiquetheRiverfront,
-          bookMarkerSeaLifeOceanWorld
+          bookMarkerWatRongKhun,
+          bookMarkerDoiTungRoyalVilla,
+          bookMarkerSiNanNationalPark,
+          bookMarkerPangOung,
+          bookMarkerKhunSathanNationalPark
         },
       ),
     );
@@ -611,54 +611,57 @@ class mapbankokPageState extends State<mapbankokPage> {
   }
 }
 
-Marker gramercyMarker = Marker(
-  markerId: MarkerId('Wat Phra Kaew'),
-  position: LatLng(13.7516348, 100.4915796), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Wat Phra Kaew'),
+Marker bookMarkerDoiInthanonNationalPark = Marker(
+  markerId: MarkerId('Doi Inthanon\nNational Park'),
+  position: LatLng(18.5358321, 98.520961), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Doi Inthanon National Park'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
-Marker bookMarkerChinatown = Marker(
-  markerId: MarkerId('Chinatown'),
-  position: LatLng(13.7412118, 100.5081789), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Chinatown'),
+Marker bookMarkerDoiAngKhang = Marker(
+  markerId: MarkerId('Doi Ang Khang'),
+  position: LatLng(19.869721, 99.0374904), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Doi Ang Khang'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
-Marker bookMarkerTalingChanFloatingMarket = Marker(
-  markerId: MarkerId('Taling Chan Floating Market'),
-  position: LatLng(13.7762674, 100.4544092), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Taling Chan Floating Market'),
+Marker bookMarkerHuaiNamDangNationalPark = Marker(
+  markerId: MarkerId('Huai Nam Dang\nNational Park'),
+  position: LatLng(
+    19.303936,
+    98.5966806,
+  ), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Huai Nam Dang\nNational Park'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 Marker bookMarkerTrainNightMarketRatchada = Marker(
-  markerId: MarkerId('Train Night Market Ratchada'),
-  position: LatLng(13.7665171, 100.5665007), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Train Night Market Ratchada'),
+  markerId: MarkerId('Phu Chi Fa'),
+  position: LatLng(19.8506537, 100.4531632), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Phu Chi Fa'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //Khao San Road  13.7587268,100.4974355
-Marker bookMarkerKhaoSanRoad = Marker(
-  markerId: MarkerId('Khao San Road '),
-  position: LatLng(13.7587268, 100.4974355),
-  infoWindow: InfoWindow(title: 'Khao San Road'),
+Marker bookMarkerWatRongKhun = Marker(
+  markerId: MarkerId('Wat Rong Khun'),
+  position: LatLng(19.8242236, 99.7626755),
+  infoWindow: InfoWindow(title: 'Wat Rong Khun'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //13.7558694,100.503332 Nitasrattanakosin
 
-Marker bookMarkerNitasrattanakosin = Marker(
-  markerId: MarkerId('Nitasrattanakosin '),
-  position: LatLng(13.7558694, 100.503332),
-  infoWindow: InfoWindow(title: 'Nitasrattanakosin'),
+Marker bookMarkerDoiTungRoyalVilla = Marker(
+  markerId: MarkerId('Doi Tung Royal Villa '),
+  position: LatLng(20.2926014, 99.8078124),
+  infoWindow: InfoWindow(title: 'Doi Tung Royal Villa'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -666,40 +669,40 @@ Marker bookMarkerNitasrattanakosin = Marker(
 
 //13.7526286,100.4941149 Bangkok City Pillar Shrine
 
-Marker bookMarkerBangkokCityPillarShrine = Marker(
-  markerId: MarkerId('Bangkok City Pillar Shrine '),
-  position: LatLng(13.7526286, 100.4941149),
-  infoWindow: InfoWindow(title: 'Bangkok City Pillar Shrine'),
+Marker bookMarkerSiNanNationalPark = Marker(
+  markerId: MarkerId('Si Nan National Park '),
+  position: LatLng(18.3577358, 100.8312127),
+  infoWindow: InfoWindow(title: 'Si Nan National Park'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
 //13.746799,100.5328184 Sea Life Ocean World
-Marker bookMarkerSeaLifeOceanWorld = Marker(
-  markerId: MarkerId('Sea Life Ocean World '),
-  position: LatLng(13.746799, 100.5328184),
-  infoWindow: InfoWindow(title: 'Sea Life Ocean World'),
+Marker bookMarkerKhunSathanNationalPark = Marker(
+  markerId: MarkerId('Khun Sathan National Park '),
+  position: LatLng(18.2770774, 100.520795),
+  infoWindow: InfoWindow(title: 'Khun Sathan National Park'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
 //13.746799,100.5328184 Asiatique the Riverfront
-Marker bookMarkerAsiatiquetheRiverfront = Marker(
-  markerId: MarkerId('Asiatique the Riverfront '),
-  position: LatLng(13.7044191, 100.5010784),
-  infoWindow: InfoWindow(title: 'Asiatique the Riverfront'),
+Marker bookMarkerPangOung = Marker(
+  markerId: MarkerId('Pang Oung '),
+  position: LatLng(19.4979376, 97.9078109),
+  infoWindow: InfoWindow(title: 'Pang Oung'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //13.746799,100.5328184, "Sea Life Ocean World",
 
-Marker bernardinMarker = Marker(
-  markerId: MarkerId('KING POWER \n MAHANAKHON'),
-  position: LatLng(13.7233652, 100.5282494),
-  infoWindow: InfoWindow(title: 'KING POWER MAHANAKHON'),
+Marker bookMarkerDoiMaeUKho = Marker(
+  markerId: MarkerId('Doi Mae U-Kho'),
+  position: LatLng(18.8947033, 98.0889057),
+  infoWindow: InfoWindow(title: 'Doi Mae U-Kho'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
