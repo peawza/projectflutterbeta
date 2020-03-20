@@ -45,7 +45,12 @@ class _profileState extends State<profile> {
                       child: Text('Delete Record'),
                       onPressed: ( ) {
                         print(ID);
-
+                        database
+                            .collection("user")
+                            .getDocuments()
+                            .then((QuerySnapshot snapshot) {
+                          snapshot.documents.forEach((f) => print('${f.data}}'));
+                        });
 
 
                       },
@@ -59,6 +64,14 @@ class _profileState extends State<profile> {
                       child: Text('Delete Record'),
                       onPressed: ( ) {
                         print(ID);
+                        try {
+                          database
+                              .collection('user')
+                              .document(ID)
+                              .updateData({'Phone': '1351045666'});
+                        } catch (e) {
+                          print(e.toString());
+                        }
 
 
                       },
@@ -87,4 +100,22 @@ class _profileState extends State<profile> {
 }
 
 
+void updateData() {
+  try {
+    database
+        .collection('user')
+        .document('1')
+        .updateData({'description': 'Head First Flutter'});
+  } catch (e) {
+    print(e.toString());
+  }
+}
 
+void getData() {
+  database
+      .collection("books")
+      .getDocuments()
+      .then((QuerySnapshot snapshot) {
+    snapshot.documents.forEach((f) => print('${f.data}}'));
+  });
+}
