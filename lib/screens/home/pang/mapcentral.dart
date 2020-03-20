@@ -84,10 +84,10 @@ class mapcaentralPageState extends State<mapcaentralPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0), //ตำแหน่ง
                 child: _boxes(
-                    "assets/immages/photo/mapwest/1ErawanNationalPark.jpg",
+                    "assets/immages/photo/mapcaentral/1KiriwongTemple.jpg",
                     15.71323,100.1265861,
-                    "Erawan National Park", //1 พัทยา
-                    'Kanchanaburi',
+                    "Kiriwong Temple", //1 พัทยา
+                    'Nakhon Sawan',
                     '4.5',
                     '4.5',
                     '905',
@@ -97,49 +97,49 @@ class mapcaentralPageState extends State<mapcaentralPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/2NamtokPhaCharoen.jpg",
+                    "assets/immages/photo/mapcaentral/2ThungBuaDaengFloatingMarket.jpg",
                     16.5018157,98.7523984,
-                    "Namtok Pha Charoen\nNational Park",
-                    'Tak',
-                    '4.3',
+                    "Thung Bua Daeng\nFloating Market",
+                    'Nakhon Pathom',
+                    '3.9',
                     '4',
-                    '547',
-                    'Open 24 hours',
+                    '2,261',
+                    '08:00-18.00',
                     '   -')),
             SizedBox(width: 10.0),
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/3SaiYokPark.jpg",
-                    14.4374466,98.8505249,
-                    "Sai Yok\nNational Park",
-                    'Kanchanaburi',
-                    '4.4',
+                    "assets/immages/photo/mapcaentral/3Sarikawaterfall.jpg",
+                    14.3087955,101.253167,
+                    "Sarika waterfall",
+                    'Nakon Nayok',
+                    '4.0',
+                    '4',
+                    '1,282',
+                    '8:00–17:00',
+                    '   -')),
+            SizedBox(width: 10.0),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: _boxes(
+                    "assets/immages/photo/mapcaentral/4WatMahathat.jpg",
+                    14.3569443,100.5653225,
+                    "Wat Mahathat",
+                    'Chai Nat',
+                    '4.6',
                     '4.5',
-                    '1,682',
-                    '7:00–17:00',
-                    '   -')),
-            SizedBox(width: 10.0),
-            Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: _boxes(
-                    "assets/immages/photo/mapwest/4DamnoenSaduakFloatingMarket.jpg",
-                    13.5202817,99.9592564,
-                    "Damnoen Saduak\nFloating Market",
-                    'Ratchaburi',
-                    '3.8',
-                    '4',
-                    '15,457',
+                    '9,997',
                     '07:00–17:00',
                     '   -')), //13.7665171,100.5665007
             SizedBox(width: 10.0),
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/5SamPhanNamFloatingMarket.jpg",
-                    12.501219,99.9128484,
-                    "Sam Phan Nam\nFloating Market",
-                    'Prachuap Khiri Khan',
+                    "assets/immages/photo/mapcaentral/5KhunInthapramunTemple.jpg",
+                    14.6420612,100.4267137,
+                    "Khun Inthapramun Temple",
+                    'Ang Thong',
                     '3.5',
                     '3.5',
                     '3,125',
@@ -149,28 +149,27 @@ class mapcaentralPageState extends State<mapcaentralPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/6TheVeneziaHuaHin.jpg",
-                    12.650573,99.9489325,
-                    "The Venezia Hua Hin",
-                    'Prachuap Khiri Khan',
-                    '3.5',
-                    '3.5',
-                    '3,749',
-                    '10:00 - 20:00',
+                    "assets/immages/photo/mapcaentral/6HupWongReservoir.jpg",
+                    14.7887901,99.5389374,
+                    "Hup Wong Reservoir",
+                    'Suphan Buri',
+                    '4.3',
+                    '4.5',
+                    '749',
+                    '06:00 - 18:00',
                     '   -')), //Khao San Road  13.7587268,100.4974355
             SizedBox(width: 10.0),
             //13.7558694,100.503332 Nitasrattanakosin 13.7526286,100.4941149
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/7BridgeotheRiverKwai.jpg",
-                    14.2179107,
-                    101.8993209,
-                    "The Bridge of the River Kwai",
-                    'Kanchanaburi',
+                    "assets/immages/photo/mapcaentral/7Redbridgedolphinviewpoint.jpg",
+                    13.4875943,100.3621788,
+                    "Red Boardwalk bridge ",
+                    'Samut Sakhon',
                     '4.4',
                     '4.5',
-                    '18,384',
+                    '908',
                     'Open 24 hours',
                     '-')),
             SizedBox(width: 10.0),
@@ -178,29 +177,28 @@ class mapcaentralPageState extends State<mapcaentralPage> {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/8KaengKrachanNationalPark.jpg",
-                    2.5338205,
-                    101.9403762,
-                    "Kaeng Krachan\nNational Park",
-                    'Phetchaburi',
-                    '4.4',
-                    '4.5',
-                    '1,691',
-                    '06:00 - 18:00',
+                    "assets/immages/photo/mapcaentral/9MaeklongRailwayMarket.jpg",
+                    13.4075096,99.9987779,
+                    "Maeklong Railway Market",
+                    'Samut Songkhram',
+                    '4.2',
+                    '4',
+                    '8,691',
+                    '08:00 - 19:00',
                     '   -')),
             SizedBox(width: 10.0),
             //13.7526286,100.4941149 Bangkok City Pillar Shrine
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
-                    "assets/immages/photo/mapwest/9BangTabunBay.jpg",
-                    13.2647366,99.9359052,
-                    "Bang Tabun Bay",
-                    'Phetchaburi',
-                    '4.0',
-                    '4',
-                    '794',
-                    'Open 24 hours',
+                    "assets/immages/photo/mapcaentral/9BangPuRecreationCenter.jpg",
+                    13.5172594,100.6527381,
+                    "Bang Pu Recreation Center",
+                    'Samut Prakan',
+                    '4.3',
+                    '4.5',
+                    '7,794',
+                    '10:00 - 19:00',
                     '   -')),
             SizedBox(width: 10.0),
             //13.746799,100.5328184 Sea Life Ocean World 4.5
@@ -208,14 +206,13 @@ class mapcaentralPageState extends State<mapcaentralPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
-                  "assets/immages/photo/mapwest/10ThiLoSuWaterfall.jpg",
-                  12.5710842,
-                  101.8964168,
-                  "Thi Lo Su Waterfall ",
-                  'Tak',
-                  '4.6',
+                  "assets/immages/photo/mapcaentral/10PhuThapBerk.jpg",
+                  16.9046522,101.1003309,
+                  "Phu Thap Berk",
+                  'Phetchabun',
                   '4.5',
-                  '1,058',
+                  '4.5',
+                  '4,058',
                   'Open 24 hours',
                   '   -'),
             ),
@@ -578,16 +575,16 @@ class mapcaentralPageState extends State<mapcaentralPage> {
           _controller.complete(controller);
         },
         markers: {
-          bookMarkerErawanNationalPark,
-          bookMarkerBangTabunBay,
-          bookMarkerNamtokPhaCharoenNationalPark,
-          bookMarkerSaiYokNationalPark,
-          bookMarkerDamnoenSaduakFloatingMarket,
-          bookMarkerSamPhanNamFloatingMarket,
-          bookMarkerTheVeneziaHuaHin,
-          bookMarkerTheBridgeoftheRiverKwai,
-          bookMarkerKaengKrachanNationalPark,
-          bookMarkerChaoLaoBeach
+          bookMarkerKiriwongTemple,
+          bookMarkerPhuThapBerk,
+          bookMarkerThungBuaDaengFloatingMarket,
+          bookMarkerSarikawaterfall,
+          bookMarkerWatMahathat,
+          bookMarkerKhunInthapramunTemple,
+          bookMarkerHupWongReservoir,
+          bookMarkerRedbridgedolphinviewpoint,
+          bookMarkerBangPuRecreationCenter,
+          bookMarkerMaeklongRailwayMarket
         },
       ),
     );
@@ -604,56 +601,56 @@ class mapcaentralPageState extends State<mapcaentralPage> {
   }
 }
 
-Marker bookMarkerErawanNationalPark = Marker(
-  markerId: MarkerId('Erawan National Park'),
-  position: LatLng(14.3686275,99.1417536), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Erawan National Park'),
+Marker bookMarkerKiriwongTemple = Marker(
+  markerId: MarkerId('Kiriwong Temple'),
+  position: LatLng(15.71323,100.1265861), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Kiriwong Temple'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
-Marker bookMarkerNamtokPhaCharoenNationalPark = Marker(
-  markerId: MarkerId('Namtok Pha Charoen\nNational Park'),
+Marker bookMarkerThungBuaDaengFloatingMarket = Marker(
+  markerId: MarkerId('Thung Bua Daeng\nFloating Market'),
   position: LatLng(16.5018157,98.7523984), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Namtok Pha Charoen\nNational Park'),
+  infoWindow: InfoWindow(title: 'Thung Bua Daeng\nFloating Market'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
-Marker bookMarkerSaiYokNationalPark = Marker(
-  markerId: MarkerId('Sai Yok\nNational Park'),
+Marker bookMarkerSarikawaterfall = Marker(
+  markerId: MarkerId('Sarika waterfall"'),
   position: LatLng(
-    14.4374466,98.8505249,
+    14.3087955,101.253167,
   ), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Sai Yok\nNational Park'),
+  infoWindow: InfoWindow(title: 'Sarika waterfall"'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
-Marker bookMarkerDamnoenSaduakFloatingMarket = Marker(
-  markerId: MarkerId('Damnoen Saduak\nFloating Market'),
-  position: LatLng(11.6618769, 102.4964761), //ปักหมุด
-  infoWindow: InfoWindow(title: 'Damnoen Saduak\nFloating Market'),
+Marker bookMarkerWatMahathat = Marker(
+  markerId: MarkerId('Wat Mahathat'),
+  position: LatLng(14.3569443,100.5653225), //ปักหมุด
+  infoWindow: InfoWindow(title: 'Wat Mahathat'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //Khao San Road  13.7587268,100.4974355
-Marker bookMarkerSamPhanNamFloatingMarket = Marker(
-  markerId: MarkerId('Sam Phan Nam\nFloating Market'),
-  position: LatLng(12.501219,99.9128484),
-  infoWindow: InfoWindow(title: 'Sam Phan Nam\nFloating Market'),
+Marker bookMarkerKhunInthapramunTemple = Marker(
+  markerId: MarkerId('Khun Inthapramun Temple'),
+  position: LatLng(14.6420612,100.4267137),
+  infoWindow: InfoWindow(title: 'Khun Inthapramun Temple'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //13.7558694,100.503332 Nitasrattanakosin
 
-Marker bookMarkerTheVeneziaHuaHin = Marker(
-  markerId: MarkerId('The Venezia Hua Hin '),
-  position: LatLng(12.650573,99.9489325),
-  infoWindow: InfoWindow(title: 'The Venezia Hua Hin'),
+Marker bookMarkerHupWongReservoir = Marker(
+  markerId: MarkerId('Hup Wong Reservoir '),
+  position: LatLng(14.7887901,99.5389374),
+  infoWindow: InfoWindow(title: 'Hup Wong Reservoir'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -661,41 +658,40 @@ Marker bookMarkerTheVeneziaHuaHin = Marker(
 
 //13.7526286,100.4941149 Bangkok City Pillar Shrine
 
-Marker bookMarkerTheBridgeoftheRiverKwai = Marker(
-  markerId: MarkerId('The Bridge of\nthe River Kwai'),
-  position: LatLng(14.2179107, 101.8993209),
-  infoWindow: InfoWindow(title: 'The Bridge of\nthe River Kwai'),
+Marker bookMarkerRedbridgedolphinviewpoint = Marker(
+  markerId: MarkerId('Red Boardwalk bridge'),
+  position: LatLng(13.4875943,100.3621788),
+  infoWindow: InfoWindow(title: 'Red Boardwalk bridge'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
 //13.746799,100.5328184 Sea Life Ocean World
-Marker bookMarkerChaoLaoBeach = Marker(
-  markerId: MarkerId('Chao Lao Beach '),
-  position: LatLng(2.5338205, 101.9403762),
-  infoWindow: InfoWindow(title: 'Chao Lao Beach'),
+Marker bookMarkerMaeklongRailwayMarket = Marker(
+  markerId: MarkerId('Maeklong Railway Market '),
+  position: LatLng(13.4075096,99.9987779),
+  infoWindow: InfoWindow(title: 'Maeklong Railway Market'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 
 //13.746799,100.5328184 Asiatique the Riverfront
-Marker bookMarkerKaengKrachanNationalPark = Marker(
-  markerId: MarkerId('Kaeng Krachan\nNational Park '),
-  position: LatLng(2.5338205,
-      101.9403762),
-  infoWindow: InfoWindow(title: 'Kaeng Krachan\nNational Park'),
+Marker bookMarkerBangPuRecreationCenter = Marker(
+  markerId: MarkerId('Bang Pu Recreation Center '),
+  position: LatLng(13.5172594,100.6527381),
+  infoWindow: InfoWindow(title: 'Bang Pu Recreation Center'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
 );
 //13.746799,100.5328184, "Sea Life Ocean World",
 
-Marker bookMarkerBangTabunBay = Marker(
-  markerId: MarkerId('Bang Tabun Bay'),
-  position: LatLng(13.2647366,99.9359052),
-  infoWindow: InfoWindow(title: 'Bang Tabun Bay'),
+Marker bookMarkerPhuThapBerk = Marker(
+  markerId: MarkerId('Phu Thap Berk'),
+  position: LatLng(16.9046522,101.1003309),
+  infoWindow: InfoWindow(title: 'Phu Thap Berk'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),

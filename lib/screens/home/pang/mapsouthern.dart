@@ -22,7 +22,7 @@ class MapsouthernPageState extends State<MapsouthernPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bangkok"),
+        title: Text("southern"),
       ),
       body: Stack(
         children: <Widget>[
@@ -62,13 +62,13 @@ class MapsouthernPageState extends State<MapsouthernPage> {
   Future<void> _minus(double zoomVal) async {
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(18.790468, 98.9812626), zoom: zoomVal)));
+        CameraPosition(target: LatLng(8.2318823,99.4829783), zoom: zoomVal)));
   }
 
   Future<void> _plus(double zoomVal) async {
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(18.790468, 98.9812626), zoom: zoomVal)));
+        CameraPosition(target: LatLng(8.2318823,99.4829783), zoom: zoomVal)));
   }
 
   Widget _buildContainer() {
@@ -580,7 +580,7 @@ class MapsouthernPageState extends State<MapsouthernPage> {
       child: GoogleMap(
         mapType: MapType.normal,
         initialCameraPosition: CameraPosition(
-            target: LatLng(18.790468, 98.9812626), zoom: 7), //เลือกตำแหน่ง
+            target: LatLng(8.2318823,99.4829783), zoom: 7), //เลือกตำแหน่ง
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
