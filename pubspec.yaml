@@ -73,6 +73,9 @@ flutter:
     - images/flipping.jpg
     - assets/data.json
     - assets/immages/photocallcenter.png
+    - assets/immages/
+    - assets/immages/photo/mapeast/
+    - assets/immages/photo/mapwest/
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
