@@ -5,6 +5,7 @@ import 'package:projectflutterbeta/screens/home/pang/callcenter.dart';
 import 'package:projectflutterbeta/screens/home/pang/convertermoney.dart';
 import 'package:projectflutterbeta/screens/home/pang/food.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapbangkok.dart';
+import 'package:projectflutterbeta/screens/home/pang/mapcentral.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapeast.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapnorth.dart';
 import 'package:projectflutterbeta/screens/home/pang/mapsouthern.dart';
@@ -340,6 +341,43 @@ class _Home_PangState extends State<Home_Pang> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) => mapwestPage()));
+                              //debugPrint('Button clicked');
+                            },
+                            child: null),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Center(
+          child: Row(
+            children: <Widget>[
+              SizedBox(
+                width: 25,
+              ),
+              Card(
+                child: Material(
+                  child: ClipOval(
+                    child: Card(
+                      child: Container(
+                        width: 340.0,
+                        height: 150.0,
+                        //alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/immages/telephone.png'),
+                          ),
+                        ),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => mapcaentralPage()));
                               //debugPrint('Button clicked');
                             },
                             child: null),

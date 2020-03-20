@@ -4,12 +4,12 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:condition/condition.dart';
 
-class mapwestPage extends StatefulWidget {
+class mapcaentralPage extends StatefulWidget {
   @override
-  mapwestPageState createState() => mapwestPageState();
+  mapcaentralPageState createState() => mapcaentralPageState();
 }
 
-class mapwestPageState extends State<mapwestPage> {
+class mapcaentralPageState extends State<mapcaentralPage> {
   Completer<GoogleMapController> _controller = Completer();
 
   @override
@@ -22,7 +22,7 @@ class mapwestPageState extends State<mapwestPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("West"),
+        title: Text("caentral"),
       ),
       body: Stack(
         children: <Widget>[
@@ -85,7 +85,7 @@ class mapwestPageState extends State<mapwestPage> {
                 padding: const EdgeInsets.all(8.0), //ตำแหน่ง
                 child: _boxes(
                     "assets/immages/photo/mapwest/1ErawanNationalPark.jpg",
-                    14.3686275,99.1417536,
+                    15.71323,100.1265861,
                     "Erawan National Park", //1 พัทยา
                     'Kanchanaburi',
                     '4.5',
@@ -179,7 +179,8 @@ class mapwestPageState extends State<mapwestPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: _boxes(
                     "assets/immages/photo/mapwest/8KaengKrachanNationalPark.jpg",
-                    12.8670702,99.4000582,
+                    2.5338205,
+                    101.9403762,
                     "Kaeng Krachan\nNational Park",
                     'Phetchaburi',
                     '4.4',
@@ -289,29 +290,29 @@ class mapwestPageState extends State<mapwestPage> {
           padding: const EdgeInsets.only(left: 8.0),
           child: Container(
               child: Text(
-            restaurantName,
-            style: TextStyle(
-                color: Color(0xff6200ee),
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold),
-          )),
+                restaurantName,
+                style: TextStyle(
+                    color: Color(0xff6200ee),
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold),
+              )),
         ),
         SizedBox(height: 5.0),
         Conditioned(
           cases: [
             Case(valueStar == '3.5',
                 builder: () => Container(
-                        child: Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Container(
                             child: Text(
-                          value,
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              value,
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                         Container(
                           child: Icon(
                             FontAwesomeIcons.solidStar,
@@ -349,27 +350,27 @@ class mapwestPageState extends State<mapwestPage> {
                         ),
                         Container(
                             child: Text(
-                          "(" + valuepeople + ")",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              "(" + valuepeople + ")",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                       ],
                     ))),
             Case(valueStar == '4',
                 builder: () => Container(
-                        child: Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Container(
                             child: Text(
-                          value,
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              value,
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                         Container(
                           child: Icon(
                             FontAwesomeIcons.solidStar,
@@ -407,27 +408,27 @@ class mapwestPageState extends State<mapwestPage> {
                         ),
                         Container(
                             child: Text(
-                          "(" + valuepeople + ")",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              "(" + valuepeople + ")",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                       ],
                     ))),
             Case(valueStar == '4.5',
                 builder: () => Container(
-                        child: Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Container(
                             child: Text(
-                          value,
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              value,
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                         Container(
                           child: Icon(
                             FontAwesomeIcons.solidStar,
@@ -465,27 +466,27 @@ class mapwestPageState extends State<mapwestPage> {
                         ),
                         Container(
                             child: Text(
-                          "(" + valuepeople + ")",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              "(" + valuepeople + ")",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                       ],
                     ))),
             Case(valueStar == '5',
                 builder: () => Container(
-                        child: Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Container(
                             child: Text(
-                          value,
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              value,
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                         Container(
                           child: Icon(
                             FontAwesomeIcons.solidStar,
@@ -523,12 +524,12 @@ class mapwestPageState extends State<mapwestPage> {
                         ),
                         Container(
                             child: Text(
-                          "(" + valuepeople + ")",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 18.0,
-                          ),
-                        )),
+                              "(" + valuepeople + ")",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18.0,
+                              ),
+                            )),
                       ],
                     )))
           ],
@@ -537,30 +538,30 @@ class mapwestPageState extends State<mapwestPage> {
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          province,
-          style: TextStyle(
-            color: Colors.black54,
-            fontSize: 18.0,
-          ),
-        )),
+              province,
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 18.0,
+              ),
+            )),
         SizedBox(height: 5.0),
         Container(
             child: Text(
-          "Opens " + time,
-          style: TextStyle(
-              color: Colors.black54,
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold),
-        )),
+              "Opens " + time,
+              style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold),
+            )),
         SizedBox(height: 2.0),
         Container(
             child: Text(
-          "Closed day \u00B7 " + Closedday,
-          style: TextStyle(
-              color: Colors.black54,
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold),
-        )),
+              "Closed day \u00B7 " + Closedday,
+              style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold),
+            )),
       ],
     );
   }
@@ -668,18 +669,12 @@ Marker bookMarkerTheBridgeoftheRiverKwai = Marker(
     BitmapDescriptor.hueViolet,
   ),
 );
-/*
-*
-* 13.5202817,99.9592564,
-                    "Damnoen Saduak\nFloating Market",
-*
-*
-* */
+
 //13.746799,100.5328184 Sea Life Ocean World
 Marker bookMarkerChaoLaoBeach = Marker(
-  markerId: MarkerId('Damnoen Saduak\nFloating Market '),
-  position: LatLng(13.5202817,99.9592564),
-  infoWindow: InfoWindow(title: 'Damnoen Saduak\nFloating Market'),
+  markerId: MarkerId('Chao Lao Beach '),
+  position: LatLng(2.5338205, 101.9403762),
+  infoWindow: InfoWindow(title: 'Chao Lao Beach'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -688,7 +683,8 @@ Marker bookMarkerChaoLaoBeach = Marker(
 //13.746799,100.5328184 Asiatique the Riverfront
 Marker bookMarkerKaengKrachanNationalPark = Marker(
   markerId: MarkerId('Kaeng Krachan\nNational Park '),
-  position: LatLng(12.8670702,99.4000582),
+  position: LatLng(2.5338205,
+      101.9403762),
   infoWindow: InfoWindow(title: 'Kaeng Krachan\nNational Park'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
