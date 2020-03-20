@@ -5,13 +5,14 @@ import 'package:projectflutterbeta/screens/home/appbar.dart';
 import 'package:projectflutterbeta/screens/home/brew_list.dart';
 import 'package:projectflutterbeta/screens/home/pang/home.dart';
 import 'package:projectflutterbeta/screens/home/settings_form.dart';
+import 'package:projectflutterbeta/screens/home/pang/profile.dart';
 import 'package:projectflutterbeta/services/auth.dart';
 import 'package:projectflutterbeta/services/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-final AuthService _auth = AuthService();
 
+final AuthService _auth = AuthService();
 
 class Home extends StatelessWidget {
   @override
@@ -27,55 +28,63 @@ class Home extends StatelessWidget {
           });
     }
 
-
-    Widget Mydrawertab1 =Drawer(
+    Widget Mydrawertab1 = Drawer(
       child: ListView(
         children: <Widget>[
           DrawerHeader(
               decoration: BoxDecoration(
                   gradient: LinearGradient(colors: <Color>[
-                    Colors.red,
-                    Colors.white,
-                    Colors.blue,
-                    Colors.white,
-                    Colors.red,
-                  ])
-              ),
+                Colors.red,
+                Colors.white,
+                Colors.blue,
+                Colors.white,
+                Colors.red,
+              ])),
               child: Container(
                 child: Column(
                   children: <Widget>[
                     Material(
                       borderRadius: BorderRadius.all(Radius.circular(50.0)),
                       elevation: 10,
-                      child: Padding(padding: EdgeInsets.all(8.0),
-                          child :Image.asset('assets/immages/rsm2.jpg',width: 100,height: 100,)),
+                      child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Image.asset(
+                            'assets/immages/rsm2.jpg',
+                            width: 100,
+                            height: 100,
+                          )),
                     ),
-                    Text('Name',style: TextStyle(color: Colors.white,fontSize: 15.0),),
+                    Text(
+                      'Name',
+                      style: TextStyle(color: Colors.white, fontSize: 15.0),
+                    ),
                   ],
                 ),
               )),
-          CustomListTile(Icons.person,'Profile',()=>{}),
-          CustomListTile(Icons.edit,'Changed-Password',()=>{}),
-          CustomListTile(Icons.settings,'Setting',()=>{}),
+          CustomListTile(
+            Icons.person,
+            'Profile',
+            () => Navigator.push(
+                context, MaterialPageRoute(builder: (context) => profile())),
+          ),
+          CustomListTile(Icons.edit, 'Changed-Password', () => {}),
+          CustomListTile(Icons.settings, 'Setting', () => {}),
           //
 
           Padding(
             padding: const EdgeInsets.fromLTRB(8.0, 0, 8.0, 0),
             child: Container(
               decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(color: Colors.grey.shade400))
-              ),
+                  border:
+                      Border(bottom: BorderSide(color: Colors.grey.shade400))),
               child: InkWell(
                 splashColor: Colors.orangeAccent,
-                onTap: () async{
+                onTap: () async {
                   Navigator.pop(context);
                   {
                     await _auth.signOut();
                   }
-
-
                 },
-
                 child: Container(
                   height: 50,
                   child: Row(
@@ -86,9 +95,10 @@ class Home extends StatelessWidget {
                           Icon(Icons.exit_to_app),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('Logout',style: TextStyle(
-                                fontSize: 16.0
-                            ),),
+                            child: Text(
+                              'Logout',
+                              style: TextStyle(fontSize: 16.0),
+                            ),
                           ),
                         ],
                       ),
@@ -101,18 +111,16 @@ class Home extends StatelessWidget {
           ),
 
           //
-          CustomListTile(Icons.exit_to_app,'exitApp',()=>exit(0)),
+          CustomListTile(Icons.exit_to_app, 'exitApp', () => exit(0)),
         ],
       ),
     );
-
-
 
     return StreamProvider<List<Brew>>.value(
       value: DatabaseService().brews,
       child: Scaffold(
         backgroundColor: Colors.brown[50],
-        appBar:appBartab,
+        appBar: appBartab,
 
         /*
         AppBar(
@@ -135,14 +143,11 @@ class Home extends StatelessWidget {
           ],
         ),*/
         drawer: Mydrawertab1,
-
         body: Home_Pang(),
       ),
     );
   }
 }
-
-
 
 Widget appBartab = AppBar(
   title: Text('Brew Crew'),
@@ -159,14 +164,11 @@ Widget appBartab = AppBar(
   ],
 );
 
-
-
-
-class CustomListTile extends StatelessWidget{
+class CustomListTile extends StatelessWidget {
   IconData icon;
   String text;
   Function onTap;
-  CustomListTile(this.icon,this.text,this.onTap);
+  CustomListTile(this.icon, this.text, this.onTap);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -174,8 +176,7 @@ class CustomListTile extends StatelessWidget{
       padding: const EdgeInsets.fromLTRB(8.0, 0, 8.0, 0),
       child: Container(
         decoration: BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey.shade400))
-        ),
+            border: Border(bottom: BorderSide(color: Colors.grey.shade400))),
         child: InkWell(
           splashColor: Colors.orangeAccent,
           onTap: onTap,
@@ -189,9 +190,10 @@ class CustomListTile extends StatelessWidget{
                     Icon(icon),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text(text,style: TextStyle(
-                          fontSize: 16.0
-                      ),),
+                      child: Text(
+                        text,
+                        style: TextStyle(fontSize: 16.0),
+                      ),
                     ),
                   ],
                 ),

@@ -1,15 +1,16 @@
 import 'package:projectflutterbeta/models/brew.dart';
 import 'package:projectflutterbeta/models/user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:projectflutterbeta/models/userprofile.dart';
 
 class DatabaseService {
   final String uid;
   DatabaseService({this.uid});
 
   // collection reference
+
   final CollectionReference brewCollection =
       Firestore.instance.collection('brews');
+
   final CollectionReference UserCollection =
       Firestore.instance.collection('user');
 
@@ -52,8 +53,6 @@ class DatabaseService {
     return brewCollection.document(uid).snapshots().map(_userDataFromSnapshot);
   }
 
-  //กำลังเทส
-
   Future<void> updateUserprofileData(
       String email, String Nickname, String Phone, String uid) async {
     return await UserCollection.document(uid).setData({
@@ -64,57 +63,4 @@ class DatabaseService {
       'photo': 'https://sv1.picz.in.th/images/2020/03/21/QQYtet.png'
     });
   }
-
-  // brew list from snapshot
-
-  List<Userprofile> _UserListFromSnapshot(QuerySnapshot snapshot) {
-    return snapshot.documents.map((doc) {
-      //print(doc.data);
-      return Userprofile(
-          email: doc.data['email'] ?? '',
-          Nickname: doc.data['Nickname'] ?? '',
-          Phone: doc.data['Phone'] ?? '',
-          photo: doc.data['photo'] ?? '');
-    }).toList();
-  }
-
-  // user data from snapshots
-  UserprofileData _userprofileDataFromSnapshot(DocumentSnapshot snapshot) {
-    return UserprofileData(
-        uid: uid,
-        email: snapshot.data['email'],
-        Phone: snapshot.data['Phone'],
-        photo: snapshot.data['photo'],
-        Nickname: snapshot.data['Nickname']);
-  }
-
-  // get brews stream
-
-  Stream<List<Userprofile>> get User {
-    return UserCollection.snapshots().map(_UserListFromSnapshot);
-  }
-
-  // get user doc stream
-  Stream<UserprofileData> get userprofileData {
-    return UserCollection.document(uid)
-        .snapshots()
-        .map(_userprofileDataFromSnapshot);
-  }
-
-  /*
-  
-  Future<void> updateUserprofileData(String email,String Nickname , String Phone ,String uid) async {
-    return await UserCollection.document(uid).setData({
-      'email': email,
-      'Nickname': Nickname,
-      'Phone': Phone,
-      'uid': uid,
-      'photo': 'https://sv1.picz.in.th/images/2020/03/21/QQYtet.png'
-    });
-  }
-  
-  
-  
-   */
-
 }

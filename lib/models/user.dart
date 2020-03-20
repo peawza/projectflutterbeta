@@ -14,4 +14,7 @@ class UserData {
 
   UserData({ this.uid, this.sugars, this.strength, this.name });
 
+
+
+
 }
