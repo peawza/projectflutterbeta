@@ -72,8 +72,8 @@ class DatabaseService {
       //print(doc.data);
       return Userprofile(
           email: doc.data['email'] ?? '',
-          Nickname: doc.data['Nickname'] ?? '',
-          Phone: doc.data['Phone'] ?? '',
+          pickname: doc.data['Nickname'] ?? '',
+          phone: doc.data['Phone'] ?? '',
           photo: doc.data['photo'] ?? '');
     }).toList();
   }
@@ -83,14 +83,14 @@ class DatabaseService {
     return UserprofileData(
         uid: uid,
         email: snapshot.data['email'],
-        Phone: snapshot.data['Phone'],
+        phone: snapshot.data['Phone'],
         photo: snapshot.data['photo'],
-        Nickname: snapshot.data['Nickname']);
+        pickname: snapshot.data['Nickname']);
   }
 
   // get brews stream
 
-  Stream<List<Userprofile>> get User {
+  Stream<List<Userprofile>> get user {
     return UserCollection.snapshots().map(_UserListFromSnapshot);
   }
 
@@ -100,9 +100,9 @@ class DatabaseService {
         .snapshots()
         .map(_userprofileDataFromSnapshot);
   }
+}
+/*
 
-  /*
-  
   Future<void> updateUserprofileData(String email,String Nickname , String Phone ,String uid) async {
     return await UserCollection.document(uid).setData({
       'email': email,
@@ -112,9 +112,7 @@ class DatabaseService {
       'photo': 'https://sv1.picz.in.th/images/2020/03/21/QQYtet.png'
     });
   }
-  
-  
-  
-   */
 
-}
+
+
+   */
